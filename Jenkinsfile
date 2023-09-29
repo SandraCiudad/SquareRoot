@@ -6,7 +6,6 @@ pipeline {
                 echo 'Building..'
                 sh 'cmake -S . -B build'
                 sh 'cmake --build build'
-	            sh 'make || true';
             }
         }
         stage('Test') {
