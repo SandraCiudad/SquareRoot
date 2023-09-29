@@ -12,7 +12,7 @@ pipeline{
             steps{
                 echo 'Testing...'
                 sh 'cd build'
-                sh 'executeTests.sh'
+                ./executeTests
             }
         }
     }
