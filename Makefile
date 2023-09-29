@@ -1,2 +1,2 @@
 all:
-	cd build && valgrind ./executeTests 
+	cd build && ./executeTests 
