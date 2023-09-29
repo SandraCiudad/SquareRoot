@@ -1,5 +1,5 @@
 pipeline{
-    agent any
+    agent {label 'linux'}
     stages{
         stage('Build'){
             steps{
@@ -12,7 +12,7 @@ pipeline{
             steps{
                 echo 'Testing...'
                 sh 'cd build'
-                ./executeTests
+                sh'./executeTests'
             }
         }
     }
