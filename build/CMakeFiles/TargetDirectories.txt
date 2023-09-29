@@ -1,3 +1,0 @@
-/home/sandra/Descargas/SquareRoot/build/CMakeFiles/rebuild_cache.dir
-/home/sandra/Descargas/SquareRoot/build/CMakeFiles/edit_cache.dir
-/home/sandra/Descargas/SquareRoot/build/CMakeFiles/executeTests.dir
