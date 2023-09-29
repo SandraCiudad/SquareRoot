@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sandra/Descargas/SquareRoot/sqrt.cpp
+math.h
+-
+
+/home/sandra/Descargas/SquareRoot/sqrt_test.cpp
+sqrt.cpp
+/home/sandra/Descargas/SquareRoot/sqrt.cpp
+gtest/gtest.h
+-
+
