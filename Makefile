@@ -3,7 +3,6 @@ all:
 
 	#program compilation
 	cd .. && g++ -o testResults sqrt.cpp sqrt_test.cpp -lcppunit --coverage -g -O0 -I/usr/include/ -L/usr/lib/ -lgtest -lgtest_main  -pthread
-
-	gcovr --html coverage.html
+	gcovr -r .. coverage.html
 
 
