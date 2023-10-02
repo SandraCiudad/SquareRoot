@@ -12,7 +12,7 @@ pipeline{
         stage('Test'){
             steps{
                 echo 'Testing...'
-                junit 'test_detail.xml'
+                junit '/home/ci/Escritorio/SquareRoot/build/test_detail.xml'
             }
         }
     }
