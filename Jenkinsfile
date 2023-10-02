@@ -17,5 +17,16 @@ pipeline {
                 }
             }
         }
+        stage ('Test code coverage') {
+            steps {
+                publishHTML([allowMissing: false, 
+                alwaysLinkToLastBuild: false, 
+                keepAll: false, 
+                reportDir: '/home/sandra/Escritorio/BasicMath', 
+                reportFiles: 'coverage.html', 
+                reportName: 'Code Coverage Report', 
+                reportTitles: 'Coverage Report'])
+            }
+        }
     }
 }
