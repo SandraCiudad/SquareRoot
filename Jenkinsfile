@@ -20,6 +20,9 @@ pipeline {
                 dir('build'){
                     junit 'test_detail.xml'
                 }
+                sh 'gcc --coverage sqrt.cpp'
+                sh 'gcc --coverage sqrt_test.cpp'
+                sh 'gcovr'
             }
         }
         stage ('Test code coverage') {
