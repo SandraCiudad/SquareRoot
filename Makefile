@@ -7,6 +7,6 @@ all:
 	#memory leaks detection
 	valgrind ./testBasicMath
 
-	gcovr 
+	gcovr --html
 
 
