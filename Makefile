@@ -1,4 +1,4 @@
 all:
-	cd build && ./executeTests --gtest_output=xml --coverage -g -O0
+	cd build && valgrind ./executeTests --gtest_output=xml --coverage -g -O0
 
 	gcovr 
