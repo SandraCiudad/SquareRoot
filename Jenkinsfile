@@ -27,7 +27,7 @@ pipeline {
                 publishHTML([allowMissing: false, 
                 alwaysLinkToLastBuild: false, 
                 keepAll: false, 
-                reportDir: '/home/ci/Escritorio/SquareRoot', 
+                reportDir: '/home/sandra/Escritorio/SquareRoot', 
                 reportFiles: 'coverage.html', 
                 reportName: 'Code Coverage Report', 
                 reportTitles: 'Coverage Report'])
