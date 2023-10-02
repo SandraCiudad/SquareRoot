@@ -6,12 +6,13 @@ pipeline{
                 echo 'Building...'
                 sh 'cmake -S . -B build'
                 sh 'cmake --build build'
+                sh 'make || true'
             }
         }
         stage('Test'){
             steps{
                 echo 'Testing...'
-                sh 'make || true'
+                junit 'test_detail.xml'
             }
         }
     }

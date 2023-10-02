@@ -1,2 +1,2 @@
 all:
-	cd build && ./executeTests 
+	cd build && ./executeTests --gtest_output=xml
