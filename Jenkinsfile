@@ -28,7 +28,7 @@ pipeline {
                 alwaysLinkToLastBuild: false, 
                 keepAll: false, 
                 reportDir: '/home/sandra/Escritorio/SquareRoot', 
-                reportFiles: 'coverage.html', 
+                reportFiles: 'cov.html', 
                 reportName: 'Code Coverage Report', 
                 reportTitles: 'Coverage Report'])
             }
