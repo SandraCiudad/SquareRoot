@@ -12,16 +12,11 @@ pipeline{
         stage('Test'){
             steps{
                 echo 'Testing...'
-                junit 'test_detail.xml'
+                sh 'cp cpp2junit.xslt /home/ci/Escritorio/SquareRoot/build'
+                sh 'xsltproc -o junitTestResults.xml cpp2junit.xslt test_detail.xml'
+                junit 'junitTestResults.xml '
             }
         }
-        post {
-            always{
-                xunit (
-                    thresholds: [ skipped(failureThreshold: '0'), failed(failureThreshold: '0') ],
-                    tools: [ BoostTest(pattern: 'build/*.xml') ]
-                )
-            }
     }
     }
 }
