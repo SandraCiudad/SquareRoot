@@ -1,2 +1,8 @@
 all:
-	cd build && valgrind ./executeTests --gtest_output=xml --coverage -g -O0
+	#program compilation
+	cd build && g++ -o testResults sqrt.cpp sqrt_test.cpp -lcppunit --coverage -g -O0
+
+	#memory leaks detection
+	valgrind ./testResults
+
+	gcovr 
