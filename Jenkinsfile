@@ -20,6 +20,8 @@ pipeline {
                 dir('build'){
                     junit 'test_detail.xml'
                 }
+                sh 'g++ -o testResults sqrt.cpp sqrt_test.cpp -lcppunit --coverage -g -O0 -I/usr/include/ -L/usr/lib/ -lgtest -lgtest_main  -pthread'
+                sh 'gcovr -r .. cov.html'
             }
         }
         stage ('Test code coverage') {
