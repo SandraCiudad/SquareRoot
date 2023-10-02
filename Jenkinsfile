@@ -19,6 +19,7 @@ pipeline {
                 echo 'Testing...'
                 dir('build'){
                     junit 'test_detail.xml'
+                    sh 'valgrind ./executeTests' 
                 }
             }
         }
