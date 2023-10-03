@@ -1,6 +1,12 @@
+#include <limits.h>
+#include "gtest/gtest.h"
+
+#include "sqrt.hpp"
 #include "sqrt.cpp"
-#include <gtest/gtest.h>
- 
+
+using namespace std;
+
+
 TEST(SquareRootTest, PositiveNos) { 
     ASSERT_EQ(6, squareRoot(36.0));
     ASSERT_EQ(18.0, squareRoot(324.0));
@@ -17,3 +23,7 @@ int main(int argc, char **argv) {
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
 }
+
+
+
+
